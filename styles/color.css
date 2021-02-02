@@ -25,6 +25,15 @@ body{
 .head_nav{
     background-color: grey;
 }
-.head .head_article{
+.head_article{
     background-color: #fff;
+}
+
+
+/* 待js调用的样式 */
+.head .head_nav a.here:hover,
+.head .head_nav a.here:visited,
+.head .head_nav a.here:link,
+.head .head_nav a.here:active{
+    background-color: #799;
 }
