@@ -18,6 +18,8 @@
 
 .head{
     margin-top:20px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 5px #1f2023;
 }
 .head img{
     height: 400px;
@@ -36,7 +38,7 @@
 }
 
 .head .head_article{
-    padding:20px 50px ;
+    padding:20px 80px ;
 }
 
 .head .head_article >h2{

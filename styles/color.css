@@ -1,3 +1,30 @@
 a{
     text-decoration: none;
 }
+a:hover{
+    color: red;
+}
+
+.head .head_nav a{
+    border-left:1px solid wheat;
+}
+
+.head .head_nav a:last-child{
+    border-right: 1px solid wheat;
+}
+
+p{
+    font-size: 20px;
+    line-height: 30px;
+}
+
+body{
+    background-color: #1f2023;
+}
+
+.head_nav{
+    background-color: grey;
+}
+.head .head_article{
+    background-color: #fff;
+}
