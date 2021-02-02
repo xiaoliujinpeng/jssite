@@ -73,3 +73,20 @@ li{
     padding: 0;
 }
 
+
+td{
+    width: 200px;
+    line-height: 30px;
+    text-align: center;
+    
+}
+thead th{
+    background-color: grey;
+}
+main.head_article h1{
+    margin: 0 auto;
+    text-align: center;
+}
+main.head_article table{
+    margin:0 auto;
+}

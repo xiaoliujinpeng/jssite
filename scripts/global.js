@@ -21,12 +21,12 @@ function insertAfter(newelem, tarelem) {
     }
 }
 
-function addClsections(elem, value) {
+function addClassName(elem, value) {
     if (elem.clsectionsName == null) {
-        elem.clsectionsName = value
+        elem.className = value
     }
     else {
-        elem.clsectionsName += " " + value;
+        elem.className += " " + value;
     }
 }
 
@@ -43,7 +43,9 @@ function hightlightPage() {
 
     for (var i = 0; i < links.length; i++) {
         if (nowlink.indexOf(links[i].getAttribute("href")) != -1) {
-            addClsections(links[i], "here");
+           
+            addClassName(links[i], "here");
+            
             a_text = links[i].textContent.toLowerCase();
 
             document.body.setAttribute("id", a_text);
@@ -98,42 +100,20 @@ function photoShow() {
 }
 
 
-function showAbout() {
 
-    var article = document.getElementsByTagName("article")[0];
-
-    var as = article.getElementsByTagName("a");
-    var section = document.getElementsByTagName("section");
-    
-    for (var j = 0; j < as.length; j++) {
-        section[j].style.display = "none";
-        as[j].onclick = function () {
-            section = document.getElementsByTagName("section");
-            var href = this.getAttribute("href");
-            href = href.replace("#", "");
-            for (var i = 0; i < section.length; i++) {
-                if (href == section[i].getAttribute("id")) {
-                    
-                    section[i].style.display = "block";
-                } else {
-                    section[i].style.display = "none";
-                }
-            }
-        }
-    }
-    // for (var i = 0; i < section.length; i++) {
-    //     id = section[i].getAttribute("id");
-    //     if (nowlink.indexOf(id) != -1) {
-    //         section[i].style.display = "block";
-    //     } else {
-    //         section[i].style.display = "none";
-    //     }
-    // }
-}
+// for (var i = 0; i < section.length; i++) {
+//     id = section[i].getAttribute("id");
+//     if (nowlink.indexOf(id) != -1) {
+//         section[i].style.display = "block";
+//     } else {
+//         section[i].style.display = "none";
+//     }
+// }
 
 
 
-showAbout()
+
+
 hightlightPage();
 photoShow();
 // addLoadEvent(hightlightPage);
